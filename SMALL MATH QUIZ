@@ -1,0 +1,84 @@
+# COPY AND PASTE THIS INTO VISUAL STUDIO CODE TO IN ORDER TO USE IT! MORE INFORMATION AT README.md
+
+math_score = 0
+
+print(
+"Feel free to take out paper and pencil to do your work. "
+"But this test should be possible with mental calculations. "
+"This test will only go up to 9th grade (sorry!). "
+)
+import time
+time.sleep(2)
+ready = input("Are you ready for this test? (yes/no) ")
+
+if ready == "yes":
+
+    kindergarten = input("Kindergarten: What is 1 + 1? ")
+    if kindergarten == "2":
+        math_score = math_score + 100 #Free hundred score for knowing basic math
+
+    first_grade = input("First grade: What is 20 - 12? ")
+    if first_grade == "8":
+        math_score = math_score + 10
+
+    second_grade = input("Second grade: What is 1238 + 457? ")
+    if second_grade == "1695":
+        math_score = math_score + 10
+
+    third_grade = input("Third grade: What is 8 x 6? ")
+    if third_grade == "48":
+     math_score = math_score + 10
+
+    fourth_grade = input("Fourth grade: What is 1/4 + 1/5? ")
+    if fourth_grade == "9/20" or fourth_grade == "0.45":
+        math_score = math_score + 10
+
+    fifth_grade = input("Fifth grade: Solve: 5(4.5 - 1.5) + 2^2 ")
+    if fifth_grade == "19":
+        math_score = math_score + 10
+
+    sixth_grade = input("Sixth grade: Solve for x: x + 2(x - 3) = 5(5 - 2) + 2x")
+    if sixth_grade == "21":
+        math_score = math_score + 25
+
+    seventh_grade = input(
+        "Seventh grade: "
+        "The hypothenuse of a right triangle is the same as the diameter of a "
+        "certain circle. The legs of the right triangle are 3 and 4. "
+        "What is the circumference of the circle? "
+        "Please leave your answer in the format: x pi "
+        )
+    if seventh_grade == "5 pi":
+        math_score = math_score + 25
+
+    eighth_grade = input(
+        "Eighth grade: Factor the equation to it's simplest form: 2x^2 + 9x + 10 "
+        "Please write it in this format: (x + y)(x + y) "          
+        )
+    if eighth_grade == "(x + 2)(2x + 5)" or eighth_grade == "(2x + 5)(x + 2)":
+        math_score = math_score + 50
+
+    eighth_grade2 = input(
+        "Eighth grade: To earn full credit, solve for the function when x is 5 "
+    )
+    if eighth_grade2 == "105":
+        math_score = math_score + 50
+
+    ninth_grade = input(
+    "Solve for x in a correct format: "
+    "-4i(4 + 10i) = 2(5x - 3i) "
+    )
+    if ninth_grade == "4 - i":
+        math_score = math_score + 250
+
+print("Final score: ", math_score)
+if math_score >= 500:
+    math_preformance = "Excellent"
+elif math_score >= 450:
+    math_preformance = "Good"
+elif math_score >= 350:
+    math_preformance = "Ok"
+elif math_score >= 250:
+    math_preformance = "Not satisfactory"
+
+print("Math preformance: " + math_preformance)
